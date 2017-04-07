@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 20px;
+}
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+}
+.background {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+	padding: 0px 50px 0 50px;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	z-index: 99;
+}
+nav .logo {
+	float: left;
+	padding-top: 3px;
+}
+nav .logo img {
+	width: 60px;
+}
+nav ul {
+	float: right;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	margin-left: 30px;
+	line-height: 50px;
+	font-weight: bold;
+}
+nav ul li a:hover {
+	color: #036A81;
+	border-bottom: 5px solid #036A81;
+	transition: all 0.5s ease-in;
+	padding-bottom: 10px;
+}
+nav:after, #aboutSection:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.sect {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.sectOne {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('images/food5.jpg');
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.sectOne .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	min-width: none;
+}
+.sectOne h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+	text-shadow: 0px 0px 300px #000;
+	font-size: 500%;
+}
+.sectOne .content a {
+	border-radius: 9px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 135%;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.sectOne .btn {
+	color: #036A81;
+	border: solid #036A81 3px;
+	margin-right: 20px;
+}
+.sectOne .btn-awesome {
+	color: #fff;
+	border: solid #fff 3px;
+	background-color: #036A81;
+}
+.sectOne .btn:hover{
+	color: #fff;
+	border: solid #fff 3px;
+	background-color: #036A81;
+	transition: all 0.5s ease-in;
+}
+.sectOne .btn-awesome:hover {
+	color: #036A81;
+	border: solid #036A81 3px;
+	background-color: transparent;
+}
+h3:after {
+	width: 100px;
+	height: 5px;
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: #036A81;
+	display: block;
+	content: ' ';
+}
+#aboutSection {
+	padding-top: 60px;
+}
+#aboutSection > h3 {
+	//margin-top: 60px;
+	margin-bottom: 30px;
+}
+#aboutSection > p {
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 20px;
+}
+.arranging {
+	text-align: justify;
+}
+#aboutSection i {
+	font-size: 50px;
+	color: #036A81;
+	margin-left: 40%;
+}
+#aboutSection h4 {
+	text-transform: capitalize;
+	margin-left: 40px;
+}
+.sectTwo {
+	margin: 60px 0;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:after {
+	visibility: hidden;
+	height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+}
+.sectTwo > ul {
+	list-style-type: none;
+	width: 100%;
+}
+
+.sectTwo > ul li {
+	display: block;
+	width: 25%;
+	float: left;
+}
+.sectTwo > ul figure {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+.sectTwo > ul figure img {
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: all 0.5s;
+}
+.sectTwo > ul figure img:hover {
+	transform: scale(1.05);
+}
+#serviceSection {
+	padding: 60px 0;
+}
+#serviceSection .pic img {
+	width: 70%;
+	margin-left: 50%;
+	margin-top: 50px;
+}
+#serviceSection .works-step {
+	margin-top: 50px;
+}
+#serviceSection .works-step article {
+	border: 1px solid #036A81;
+	display: inline-block;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+#serviceSection .works-step > a img {
+	//width: 30%;
+	height: 40px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.sectThree {
+	background-image: url('images/food4.jpg');
+	height: 40%;
+}
+.cities {
+	padding-top: 60px;
+	margin-top: 50px;
+	color: #036A81;
+}
+.cities img {
+	width: 100%;
+	height: 150px;
+	margin-top: 50px;
+}
+.testimonials {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('images/food2.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	margin-top: 60px;
+	padding: 80px 0;
+	color: #fff;
+}
+.testimonials p {
+	margin-top: 60px;
+	line-height: 25px;
+	text-align: justify;
+	margin-top: 40px;
+}
+.testimonials cite img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+#contactSection {
+	padding-top: 60px;
+}
+#contactSection h3 {
+	margin-bottom: 60px;
+}
+.site-footer {
+	background-color: #222;
+	color: #fff;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.bottom-footer {
+	border-top: 1px solid #b2b2b2;
+	margin: 10px;
+	padding-top: 10px;
+	color: #b2b2b2;
+}
+.footer-nav {
+	text-align: right;
+}
+.footer-nav li {
+	display: inline-block;	
+}
+.footer-nav li:not(:first-child):before {
+	content: '|';
+	padding: 0px 10px;
+}
+.footer-nav a {
+	color: #b2b2b2;
+}
+.footer-nav a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.scroll-top {
+    position: fixed;
+   	bottom: 0;
+    right: 3%;
+    background: rgb(242, 242, 242);
+    font-size: 24px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: none;
+   } 
+ .scroll-top li a {
+ 	position: relative;
+    display: block;
+    padding: 3px 10px;
+ } 
+
+ @media all and (max-width: 710px) {
+ 	body {
+ 		text-align: center;
+ 	}
+ 	nav ul {
+ 		width: 100%;
+ 	}
+ 	nav ul li {
+ 		display: block;
+ 		background-color: rgba(0, 0, 0, 0.5);
+ 	}
+
+ 	#aboutSection i, #serviceSection .pic img {
+ 		margin-left: inherit;
+ 	}
+ }
+ @media all and (max-width: 580px) {
+ 	body {
+ 		text-align: center;
+ 	}
+ 	nav ul {
+ 		width: 100%;
+ 	}
+ 	nav ul li {
+ 		display: block;
+ 		background-color: rgba(0, 0, 0, 0.5);
+ 		width: 100%;
+ 	}
+ 	.sectOne h1 {
+ 		font-size: 46px;
+ 	}
+ 	.sectOne .content a {
+ 		font-size: inherit;
+ 	}
+ } 
